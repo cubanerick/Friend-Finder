@@ -7,7 +7,7 @@ Friend Finder is a full-stack site that takes in results from the site user's su
 
 ### Instructions
 
-1. Answer the survey and clich the button to watch the modal toggle with your best match
+1. Answer the survey and click the button to watch the modal toggle with your best match
 
 2. The `server.js` file requires the basic npm packages needed: `express`, `body-parser` and `path`.
 
