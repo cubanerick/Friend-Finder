@@ -5,8 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 100px;
+        }
+
+        img {
+            height:300px;
+            width: 300px
+        }
+    </style>
 </head>
 <body>
+<div class ="container">
+    <div class="modal" id="bestmatchModal" tabindex="-1" role="dialog" aria-labelledby="bestmatchModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bestmatchModalLabel">Best Match</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Your best match is...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Compatibility Survey</h1>
+    <hr>
+    <h2>About You</h2>
     
+    <form>
+        <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" class="form-control" id="nameInput">
+        </div>
+        <div class="form-group">
+            <label for="photoLink">Link to Your Photo</label>
+            <input type="text" class="form-control" id="photoLink">
+        </div>
+        <h4>Question 1</h4>
+        <div class="form-group">
+            <label for="q1">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q1">
+              <option value ="1">1 (strongly disagree)</option>
+              <option value ="2">2</option>
+              <option value ="3">3</option>
+              <option value ="4">4</option>
+              <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q2">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q2">
+              <option value ="1">1 (strongly disagree)</option>
+              <option value ="2">2</option>
+              <option value ="3">3</option>
+              <option value ="4">4</option>
+              <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q3">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q3">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q4">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q4">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q5">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q5">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q6">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q6">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q7">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q7">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q8">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q8">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q9">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q9">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q10">I enjoy long walks on the beach.</label>
+            <select class="form-control" id="q10">
+                <option value ="1">1 (strongly disagree)</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5 (strongly agree)</option>
+            </select>
+        </div>
+        <button id = "submitsurvey" type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#bestmatchModal">Submit</button>
+    </form>
+    <script>
+
+    $("#submitsurvey").on("click", function(event) {
+      event.preventDefault();
+
+      var newFriends = {
+        name: $("#nameInput").val().trim(),
+        photo:$("#photoLink").val().trim(),
+        scores:[
+           $("#q1").val(),
+           $("#q2").val(),
+           $("#q3").val(),
+           $("#q4").val(),
+           $("#q5").val(),
+           $("#q6").val(),
+           $("#q7").val(),
+           $("#q8").val(),
+           $("#q9").val(),
+           $("#q10").val()
+        ]
+        };
+
+        console.log(newFriends);
+
+        $.post("/api/friends", newFriends, function(data) {
+
+            console.log(data);
+          
+            $(".modal-body").html("<h1>" + data.name + "</h1><br>")
+            $(".modal-body").append($("<img>").attr("src", data.photo))
+
+        });
+        $("#nameInput").val("");
+        $("#photoLink").val("");
+    });
+
+    </script>
+</div>
 </body>
 </html>
