@@ -11,13 +11,39 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 100px;
+        }
+
+        img {
+            height:300px;
+            width: 300px;
+        }
+        .container{
+            background-color: black;
+            padding-bottom: 20px;
+            color: white;
+        }
+
+        body{
+            background-image: url("https://images.pexels.com/photos/532557/pexels-photo-532557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        }
+
+        .jumbotron{
+            background-image: url("https://images.pexels.com/photos/1047275/pexels-photo-1047275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+            color: white;
+            border: solid black 10px;
+            border-radius: 75px;
+        }
+    </style>
 </head>
 <body>
     <div class="jumbotron">
-        <h1 class="display-4 text-center">Friend Finder</h1>
-        <p class="lead text-center">Friend Finder helps match you with people who have similar interests!</p>
+        <h1 class="display-4 text-center">Best Match</h1>
+        <p class="lead text-center">Best Match will ask you 10 survey questions and compare you answers with other's to find your best match!!! </p>
         <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="/survey" role="button">Find Friends!</a>
-      </div>
+        <a class="btn btn-secondary btn-lg btn-block" href="/survey" role="button">Start Survey</a>
+    </div>
 </body>
 </html>
